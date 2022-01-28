@@ -53,8 +53,6 @@ jobs:
       with:
         credentials_json: ${{ secrets.GKE_SA_KEY }}
         #credentials_json: ${{ secrets.GCP_CREDENTIALS }}
-      
-      run: --->>>> ${{ secrets.GKE_SA_KEY }}
 
     # Setup gcloud CLI
     - name: Set up Cloud SDK
