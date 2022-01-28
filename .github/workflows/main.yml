@@ -46,7 +46,7 @@ jobs:
     # Get the GKE credentials so we can deploy to the cluster
     - run: |-
         gcloud container clusters get-credentials "$GKE_CLUSTER" --zone "$GKE_ZONE"
-        kubectl get all
+        gcloud projects get-iam-policy kubeops-339014
         echo "**********************************************"
     # Deploy sample image to the GKE cluster
     - name: Deploy
