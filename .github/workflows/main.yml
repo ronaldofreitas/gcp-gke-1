@@ -48,7 +48,7 @@ jobs:
 
     # Deploy the Docker image to the GKE cluster
     - name: Deploy
-      run: |
+      run: |-
         gcloud iam service-accounts list
         #kubectl get all
         echo "ZIL ZILLLL"
